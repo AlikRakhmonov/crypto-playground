@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+</head>
+<body style="padding: 50px; font-family: Helvetica, Arial, sans-serif; line-height: 1.6;">
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <legend>A Stacked Form</legend>
+            <label for="stacked-text">Text</label>
+            <input type="text" id="stacked-text" placeholder="Text" />
+            <span id="subtext" class="pure-form-message" hidden>Must be multiple of 16 bytes</span>
+
+            <label for="stacked-mode">Mode</label>
+            <select id="stacked-mode">
+                <option selected>CTR</option>
+                <option>CBC</option>
+            </select>
+
+            <label for="stacked-key">Key (min: 16 chars)</label>
+            <input type="password" id="stacked-key" placeholder="Key" />
+
+            <label for="stacked-key2">counter</label>
+            <input type="number" id="stacked-key2" placeholder="Counter" value="5" />
+
+            <button id="encrypt" type="button" class="pure-button pure-button-primary">Encrypt</button>
+
+            <button id="decrypt" type="button" class="pure-button pure-button-primary">Decrypt</button>
+
+            <label for="stacked-result">Result</label>
+            <input type="text" id="stacked-result" placeholder="Result" />
+        </fieldset>
+    </form>
+</body>
+<script src="./crypto.4pkmly.js"></script>
+<script src="./script.yedgab.js"></script>
+</html>
